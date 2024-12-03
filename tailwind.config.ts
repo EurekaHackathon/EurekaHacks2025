@@ -11,6 +11,14 @@ const config: Config = {
             colors: {
                 background: "var(--background)",
                 foreground: "var(--foreground)",
+                one: "var(--one)",
+                two: "var(--two)",
+                three: "var(--three)",
+                four: "var(--four)",
+                five: "var(--five)",
+                six: "var(--six)",
+                seven: "var(--seven)",
+                contrast: "var(--contrast)",
             },
             backgroundImage: {
                 primaryGradient: "linear-gradient(to right, #ff69eb, #ff86c8, #ffa3a5, #ffbf81, #ffdc5e)"
