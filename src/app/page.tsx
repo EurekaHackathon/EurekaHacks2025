@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 export default function Home() {
     return (
         <div className="flex items-center justify-center h-screen">
-            <div className="absolute size-full overflow-hidden">
+            <div className="absolute size-full overflow-hidden -z-20">
                 <img src="gradient.png" className="absolute blur-sm scale-[200%] left-0 top-0 translate-x-[-30%] translate-y-[-30%]" />
                 <img src="gradient.png" className="absolute blur-sm scale-[200%] right-0 bottom-0 translate-x-[30%] translate-y-[30%] rotate-180" />
             </div>
