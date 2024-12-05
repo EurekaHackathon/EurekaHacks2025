@@ -29,7 +29,7 @@ export default function Home() {
                                     }}
                                 >
                                     <h1>{char}</h1>
-                                    <h1 className="-z-10 absolute top-5 text-contrast">{char}</h1>
+                                    <h1 className="-z-10 absolute top-5 text-orange-200">{char}</h1>
                                 </motion.div>
                             )
                         })
