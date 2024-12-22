@@ -1,6 +1,6 @@
-import { FaqDropdown } from "@/components/FaqDropdown";
+import FaqDropdown from "@/components/FaqDropdown";
 
-export function FaqSection() {
+export default function FaqSection() {
     // TODO: Add proper FAQs instead of GPTed ones
     const faqs = [
         {
