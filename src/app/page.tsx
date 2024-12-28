@@ -1,14 +1,13 @@
-import { HeroSectionArt } from "@/components/HeroSectionArt";
-import { HeroSectionInfo } from "@/components/HeroSectionInfo";
+import Hero from "@/components/Hero";
+import FaqSection from "@/components/FaqSection";
 
 export default function Home() {
-
     return (
         <div>
-            <HeroSectionArt/>
-            <div className="relative z-10">
-                <HeroSectionInfo/>
-            </div>
+            <Hero />
+            <FaqSection />
+
+            <div className="py-24" />
         </div>
     );
 }

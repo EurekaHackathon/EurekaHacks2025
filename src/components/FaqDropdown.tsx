@@ -1,7 +1,9 @@
+"use client"
+
 import { useEffect, useState, useRef } from "react";
 import { clsx } from "clsx";
 
-export function FaqDropdown({ title, description }: { title: string, description: string }) {
+export default function FaqDropdown({ title, description }: { title: string, description: string }) {
     const [isOpen, setIsOpen] = useState(false);
     const contentRef = useRef<HTMLParagraphElement>(null);
     const [maxHeight, setMaxHeight] = useState("0px");
