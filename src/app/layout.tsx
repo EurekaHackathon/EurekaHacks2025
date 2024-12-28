@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
-import { GeistSans } from 'geist/font/sans';
-import { GeistMono } from 'geist/font/mono';
-import { cn } from "@/lib/utils";
 
 import "./globals.css";
+import React from "react";
+import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
     title: "EurekaHACKS 2025",
@@ -22,17 +21,21 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-    children,
-}: Readonly<{
+                                       children,
+                                   }: Readonly<{
     children: React.ReactNode;
 }>) {
     return (
         <html lang="en">
-            <body
-                className={cn(GeistSans.className, GeistMono.className)}
-            >
-                {children}
-            </body>
+        <head>
+            <meta charSet="UTF-8"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+            <title>EurekaHACKS</title>
+        </head>
+        <body className="overflow-x-hidden">
+        <Navbar/>
+        {children}
+        </body>
         </html>
     );
 }

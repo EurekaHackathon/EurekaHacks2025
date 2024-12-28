@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1920"
+   height="2160"
+   viewBox="0 0 507.99999 571.5"
+   version="1.1"
+   id="svg1"
+   xml:space="preserve"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+     id="defs1"><filter
+       style="color-interpolation-filters:sRGB"
+       id="filter281"
+       x="-1.0469347"
+       y="-1.0918532"
+       width="3.0938695"
+       height="3.1837064"><feFlood
+         result="flood"
+         in="SourceGraphic"
+         flood-opacity="1.000000"
+         flood-color="rgb(153,3,3)"
+         id="feFlood279" /><feGaussianBlur
+         result="blur"
+         in="SourceGraphic"
+         stdDeviation="6.3737349"
+         id="feGaussianBlur279" /><feOffset
+         result="offset"
+         in="blur"
+         dx="0.000000"
+         dy="0.000000"
+         id="feOffset279" /><feComposite
+         result="comp1"
+         operator="in"
+         in="offset"
+         in2="flood"
+         id="feComposite280" /><feComposite
+         result="comp2"
+         operator="atop"
+         in="comp1"
+         in2="comp1"
+         id="feComposite281" /></filter></defs><g
+     id="g270"
+     style="display:inline"><g
+       id="g323"><path
+         style="fill:#f8f9d2;fill-opacity:0.795263;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+         id="path13"
+         d="m 179.01682,90.071505 -0.17551,-5.520302 -5.30934,-3.507376 6.27335,-0.176829 3.47552,-4.805585 -0.68501,6.136751 5.54733,3.173468 -6.42882,-0.31351 z" /><path
+         style="mix-blend-mode:normal;fill:#fbfce8;fill-opacity:0.802105;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers;filter:url(#filter281)"
+         id="path265"
+         d="m 179.01682,90.071505 -0.17551,-5.520302 -5.30934,-3.507376 6.27335,-0.176829 3.47552,-4.805585 -0.68501,6.136751 5.54733,3.173468 -6.42882,-0.31351 z" /></g></g></svg>

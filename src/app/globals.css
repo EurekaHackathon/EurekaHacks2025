@@ -2,54 +2,159 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-    --background: #FFFFFF;
-    --foreground: #171717;
-    --one: #CC004B;
-    --two: #E61846;
-    --three: #FF2F41;
-    --four: #FF5A1F;
-    --five: #FF960E;
-    --six: #FCBA24;
-    --seven: #FFDC43;
-    --contrast: #004AAD;
-}
-
 @font-face {
-    font-family: "Agrandir";
-    src: url("Agrandir-GrandHeavy.otf") format('opentype');
-    font-weight: normal;
-    font-style: normal;
-
+    font-family: "Manrope";
+    src: url("../../public/Manrope-VariableFont_wght.ttf") format('truetype');
 }
 
-@layer utilities {
-    .text-balance {
-        text-wrap: balance;
+@keyframes moveClouds1 {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(100%);
     }
 }
 
-body {
-    font-family: "Agrandir";
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
+@keyframes moveClouds2 {
+    0% {
+        transform: translateX(-110%);
+    }
+    100% {
+        transform: translateX(50%);
+    }
 }
 
-body::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: radial-gradient(circle, rgba(0, 0, 0, 0.02) 1%, transparent 1%);
-    background-size: 3px 3px;
-    pointer-events: none;
+@keyframes moveClouds3 {
+    0% {
+        transform: translateX(-130%);
+    }
+    100% {
+        transform: translateX(40%);
+    }
 }
 
-/* Custom styles */
-
-.text-shadow {
-    text-shadow: var(--contrast) 0 -10;
+@keyframes moveClouds4 {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
 }
+
+.clouds1 {
+    animation: moveClouds1 240s linear infinite;
+    animation-delay: -80s;
+}
+
+.clouds2 {
+    animation: moveClouds2 240s linear infinite;
+    animation-delay: -160s;
+}
+
+.clouds3 {
+    animation: moveClouds3 240s linear infinite;
+    animation-delay: -200s;
+}
+
+.clouds4 {
+    animation: moveClouds4 240s linear infinite;
+    animation-delay: 0s;
+}
+
+@keyframes twinkle {
+    40%, 60% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0; /* Make the stars completely invisible */
+    }
+}
+
+.stars1 {
+    animation: twinkle 4s infinite;
+    animation-delay: -1s;
+}
+
+.stars2 {
+    animation: twinkle 4.2s infinite;
+    animation-delay: -5s;
+}
+
+.stars3 {
+    animation: twinkle 4.4s infinite;
+    animation-delay: -3s;
+}
+
+.stars4 {
+    animation: twinkle 4.6s infinite;
+    animation-delay: -0.5s;
+}
+
+.stars5 {
+    animation: twinkle 4.8s infinite;
+    animation-delay: -3.5s;
+}
+
+.stars6 {
+    animation: twinkle 5s infinite;
+    animation-delay: -6.25s;
+}
+
+.stars7 {
+    animation: twinkle 5.2s infinite;
+    animation-delay: -7s;
+}
+
+.stars8 {
+    animation: twinkle 5.4s infinite;
+    animation-delay: -8s;
+}
+
+.stars9 {
+    animation: twinkle 5.6s infinite;
+    animation-delay: -4s;
+}
+
+.stars10 {
+    animation: twinkle 5.8s infinite;
+    animation-delay: -2s;
+}
+
+.stars11 {
+    animation: twinkle 5s infinite;
+    animation-delay: -2.5s;
+}
+
+.stars12 {
+    animation: twinkle 5s infinite;
+    animation-delay: -5s;
+}
+
+@keyframes fix-load-bug {
+    0%, 15% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fix-load-bug {
+    animation: fix-load-bug 1s linear;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100;
+    }
+}
+
+.fade-in {
+    animation: fade-in 0.5s ease-in-out;
+}
+
