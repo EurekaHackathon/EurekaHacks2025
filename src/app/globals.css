@@ -142,7 +142,7 @@
 }
 
 .fix-load-bug {
-    animation: fix-load-bug 1s linear;
+    animation: fix-load-bug 2s linear;
 }
 
 @keyframes fade-in {
