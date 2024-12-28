@@ -10,7 +10,6 @@ export default function Navbar() {
     const [isUserScrolled, setIsUserScrolled] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [clickedOnce, setClickedOnce] = useState(false);
-    const [isAnimating, setIsAnimating] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -24,6 +23,7 @@ export default function Navbar() {
         setIsScrollPositionNotZero(window.scrollY > 0);
 
         window.addEventListener("scroll", handleScroll);
+
         return () => {
             window.removeEventListener("scroll", handleScroll);
         };
@@ -31,17 +31,13 @@ export default function Navbar() {
 
     const toggleMenu = () => {
         setClickedOnce(true);
-        setIsAnimating(true);
         setIsMenuOpen(!isMenuOpen);
-        setTimeout(() => {
-            setIsAnimating(false);
-        }, 300); // Match this duration with the CSS transition duration
     };
 
     return (
         <nav
             className={`fixed flex flex-col lg:items-center w-full top-0 z-40 text-gray-200 ease-in-out
-             ${isScrollPositionNotZero ? "backdrop-brightness-95 backdrop-blur-xl" : ""}
+             ${isScrollPositionNotZero && !isMenuOpen ? "backdrop-brightness-95 backdrop-blur-xl" : ""}
              ${isUserScrolled || clickedOnce ? "duration-500 lg:duration-200" : ""}
              ${isMenuOpen ? "backdrop-brightness-75 backdrop-blur-3xl" : ""}`}>
             <div className="hidden lg:flex items-center justify-between py-4 lg:w-[85%] 2xl:w-[60%]">
