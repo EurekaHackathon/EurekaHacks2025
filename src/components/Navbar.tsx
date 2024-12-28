@@ -77,7 +77,7 @@ export default function Navbar() {
                 </button>
             </div>
             <div
-                className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out ${isMenuOpen ? "max-h-screen" : "max-h-0"}`}>
+                className={`lg:hidden overflow-hidden transition-all duration-500 ease-in-out ${isMenuOpen ? "max-h-screen" : "max-h-0"}`}>
                 <div className="h-[100vh] fade-in flex flex-col items-center justify-center gap-8 md:gap-12">
                     <div
                         className="flex flex-col gap-4 md:gap-8 landscape:gap-4 text-xl md:text-4xl landscape:text-2xl font-semibold">
