@@ -5,8 +5,12 @@ import PastYearsSection from "@/components/PastYearsSection";
 import { SponsorSection } from "@/components/SponsorSection";
 import FaqSection from "@/components/FaqSection";
 import TeamSection from "@/components/TeamSection";
+import { db } from "@/lib/database";
+import { incrementVisitsCount } from "@/lib/queries_sql";
 
-export default function Home() {
+export default async function Home() {
+    await incrementVisitsCount(db);
+
     return (
         <div>
             <HeroSectionArt/>
