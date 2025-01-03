@@ -33,9 +33,9 @@ export default function FaqDropdown({ title, description }: { title: string, des
                       <path fill="currentColor" d="M19 12.998H5v-2h14z"/>
                     </svg>
                 }
-                <h1 className="md:text-xl">{title}</h1>
+                <h1 className="md:text-xl font-medium">{title}</h1>
             </div>
-            <p ref={contentRef} className={clsx("ml-10 text-gray-700 mt-2 md:text-lg text-sm overflow-hidden transition-all duration-[0.4s] ease-in-out")}
+            <p ref={contentRef} className={clsx("ml-10 text-gray-200 mt-2 md:text-lg text-sm overflow-hidden transition-all duration-[0.4s] ease-in-out")}
                style={{ maxHeight }}>
                 {description}
             </p>

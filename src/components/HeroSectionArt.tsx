@@ -55,8 +55,8 @@ export function HeroSectionArt() {
     };
 
     return <div className="pointer-events-none absolute w-[100vw] h-[100vh] overflow-x-clip">
-        <Image src={heroBackground} alt="Hero Background"
-               className="absolute object-cover h-[200%] landscape:w-full landscape:h-auto"/>
+        <Image src={heroBackground} alt="Hero Background" id="bg"
+               className="absolute object-cover h-full landscape:w-full landscape:h-auto"/>
         <Image priority src={clouds1} alt="Clouds 1"
                className="absolute h-full landscape:w-full landscape:h-auto scale-90 clouds1"/>
         <Image src={clouds2} alt="Clouds 2"
@@ -82,8 +82,8 @@ export function HeroSectionArt() {
             <Image src={stars12} alt="Stars 12" className="absolute w-full h-auto stars12"/>
         </div>
         <svg
-            className="fix-load-bug absolute h-[200%] translate-x-[-33%] w-auto md:translate-x-[-29%] landscape:translate-x-0 landscape:w-full landscape:h-auto"
-            viewBox="0 0 507.99999 571.5">
+            className="fix-load-bug absolute h-full translate-x-[-33%] w-auto md:translate-x-[-29%] landscape:translate-x-0 landscape:w-full landscape:h-auto"
+            viewBox="0 0 507.99999 289.45417">
             <mask id="wave-mask">
                 <rect width="100%" height="100%" fill="white"/>
                 <path ref={wavePathRef} fill="black" transform="rotate(0.1)"/>

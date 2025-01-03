@@ -30,9 +30,10 @@ export default function FaqSection() {
     ];
 
     return (
-        <div>
+        <div className="text-gray-50 pt-32" id="faq">
             <div className="flex justify-center pt-4">
-                <h1 className="xl:w-3/5 md:w-[80%] w-[90%] font-sans lg:text-4xl md:text-3xl text-2xl font-bold ml-4">Frequently Asked Questions</h1>
+                <h1 className="xl:w-3/5 md:w-[80%] w-[90%] lg:text-5xl md:text-4xl text-3xl font-semibold ml-4">Frequently
+                    Asked Questions</h1>
             </div>
             <div className="flex justify-center pt-12">
                 <div className="xl:w-3/5 md:w-[80%] w-[90%]">
@@ -43,6 +44,7 @@ export default function FaqSection() {
                     </div>
                 </div>
             </div>
+            <h1 className="text-center py-32 text-2xl">insert some art here or smth</h1>
         </div>
     );
 }

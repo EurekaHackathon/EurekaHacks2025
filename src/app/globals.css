@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    scroll-behavior: smooth;
+}
+
 @font-face {
     font-family: "Manrope";
     src: url("../../public/Manrope-VariableFont_wght.ttf") format('truetype');
@@ -157,4 +161,3 @@
 .fade-in {
     animation: fade-in 0.5s ease-in-out;
 }
-
