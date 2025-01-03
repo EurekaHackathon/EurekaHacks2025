@@ -1,5 +1,6 @@
 "use client";
 
+import { subscribe } from "@/lib/actions";
 import { useEffect, useState } from "react";
 
 export function HeroSectionInfo() {
@@ -23,7 +24,7 @@ export function HeroSectionInfo() {
             <h1 className="md:hidden font-semibold mt-2">May 4th, 2024 | Abbey Park High School</h1>
             <h1></h1>
             <h1 className="font-semibold mt-8 lg:mt-12 text-4xl">Sign Up for Updates</h1>
-            <form className="flex flex-col items-center">
+            <form className="flex flex-col items-center" action={subscribe}>
                 <input type="email" placeholder="Email" name="email"
                        className="w-72 md:w-96 lg:w-96 rounded h-12 px-4 mt-4 text-gray-900 font-medium"/>
                 <button type="submit" className="w-72 md:w-96 lg:w-96 lg:text-xl h-12 bg-accent-500 mt-4 rounded font-medium">

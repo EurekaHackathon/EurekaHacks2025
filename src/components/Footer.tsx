@@ -4,6 +4,7 @@ import Image from "next/image";
 import logo from "../../public/logo.png";
 import { Icon } from "@iconify/react";
 import { useEffect, useState } from "react";
+import { subscribe } from "@/lib/actions";
 
 export default function Footer() {
     const [isOnHomePage, setIsOnHomePage] = useState(false);
@@ -56,7 +57,7 @@ export default function Footer() {
                 </div>
                 <div className="flex flex-col lg:block">
                     <h1 className="text-xl font-semibold text-50 pt-12 lg:pt-0">Sign Up for Updates</h1>
-                    <form className="flex mt-2 lg:mt-0 lg:block">
+                    <form className="flex mt-2 lg:mt-0 lg:block" action={subscribe}>
                         <input type="email" placeholder="Email" name="email"
                                className="2xl:w-64 px-2 lg:mt-2 h-10 bg-gray-50 rounded text-gray-900 font-medium"/>
                         <button className="bg-accent-500 font-medium text-gray-50 px-4 py-2 ml-2 lg:ml-3 rounded">
