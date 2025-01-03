@@ -59,6 +59,19 @@ const config: Config = {
                     "900": "#6d2e1a",
                     "950": "#3e160a",
                 },
+                "error": {
+                    '50': '#fdf2f7',
+                    '100': '#fce7f2',
+                    '200': '#fccee6',
+                    '300': '#fba6d0',
+                    '400': '#f76fb0',
+                    '500': '#f04692',
+                    '600': '#df236e',
+                    '700': '#c21454',
+                    '800': '#a01445',
+                    '900': '#86153e',
+                    '950': '#520520',
+                },
             },
             backgroundImage: {
                 primaryGradient: "linear-gradient(to right, #ff69eb, #ff86c8, #ffa3a5, #ffbf81, #ffdc5e)"
